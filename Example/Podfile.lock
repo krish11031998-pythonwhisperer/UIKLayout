@@ -1,5 +1,5 @@
 PODS:
-  - UIKLayout (0.1.2)
+  - UIKLayout (0.1.5)
 
 DEPENDENCIES:
   - UIKLayout (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  UIKLayout: 5625fa695c884cd363a4f2718913ed6b8163fa2c
+  UIKLayout: cd813fa6868090a5972174b4db868c7322d4225f
 
 PODFILE CHECKSUM: 3b179da0e0940357dce590d629627d4858e7e865
 

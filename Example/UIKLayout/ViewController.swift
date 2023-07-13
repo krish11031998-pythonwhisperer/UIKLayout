@@ -9,12 +9,20 @@
 import UIKit
 import UIKLayout
 
+extension UIColor: AppColorCatalogue {
+    public static var surfaceBackground: UIColor { .blue }
+    public static var surfaceBackgroundInverse: UIColor { .white }
+    public static var textColor: UIColor { .white }
+    public static var textColorInverse: UIColor { .black }
+}
+
 class ViewController: UIViewController {
 
     private lazy var testView: UIView = { .init() }()
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        setupView()
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,6 +33,7 @@ class ViewController: UIViewController {
     private func setupView() {
         view.addSubview(testView)
         view.setFittingConstraints(childView: testView, insets: .zero)
+        testView.backgroundColor = .surfaceBackground
     }
 }
 

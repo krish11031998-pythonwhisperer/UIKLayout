@@ -1,8 +1,8 @@
 {
   "name": "UIKLayout",
-  "version": "0.1.2",
+  "version": "0.1.5",
   "summary": "A Simple UIKit layout Helper that will help you build that next app!.",
-  "description": "UIKLayout is a easy to use simple UIKit layout helper that will help you add and set constraints to views with ease.",
+  "description": "'UIKLayout is a easy to use simple UIKit layout helper that will help you add and set constraints to views with ease.'",
   "homepage": "https://github.com/krish11031998-pythonwhisperer/UIKLayout",
   "license": {
     "type": "MIT",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/krish11031998-pythonwhisperer/UIKLayout.git",
-    "tag": "0.1.2"
+    "tag": "0.1.5"
   },
   "platforms": {
     "ios": "13.0"
