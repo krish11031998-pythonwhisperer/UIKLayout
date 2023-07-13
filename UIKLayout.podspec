@@ -18,8 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description = 'UIKLayout is a easy to use simple UIKit layout helper that will help you add and set constraints to views with ease.'
-                       DESC
-
+            
   s.homepage         = 'https://github.com/krish11031998-pythonwhisperer/UIKLayout'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
