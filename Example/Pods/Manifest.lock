@@ -1,0 +1,16 @@
+PODS:
+  - UIKLayout (0.1.0)
+
+DEPENDENCIES:
+  - UIKLayout (from `../`)
+
+EXTERNAL SOURCES:
+  UIKLayout:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  UIKLayout: 8daf06cc222dcf3e58845668de5f7ce3c5e3b067
+
+PODFILE CHECKSUM: f11fcc60ef92bba92234d6a7056e3559f8f7ad3e
+
+COCOAPODS: 1.11.3
