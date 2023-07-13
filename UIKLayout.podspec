@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'UIKLayout'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of UIKLayout.'
+  s.summary          = 'A Simple UIKit layout Helper that will help you build that next app!.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,17 +18,17 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+'UIKLayout is a easy to use simple UIKit layout helper that will help you add and set constraints to views with ease.'
                        DESC
 
-  s.homepage         = 'https://github.com/56647167/UIKLayout'
+  s.homepage         = 'https://github.com/krish11031998-pythonwhisperer/UIKLayout'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '56647167' => 'krishna@getbaraka.com' }
-  s.source           = { :git => 'https://github.com/56647167/UIKLayout.git', :tag => s.version.to_s }
+  s.author           = { '56647167' => 'krish_venkat@hotmail.com' }
+  s.source           = { :git => 'https://github.com/krish11031998-pythonwhisperer/UIKLayout.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '13.0'
 
   s.source_files = 'UIKLayout/Classes/**/*'
   
