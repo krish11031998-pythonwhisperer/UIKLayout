@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import UIKLayout
 
 class ViewController: UIViewController {
 
+    private lazy var testView: UIView = { .init() }()
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,5 +22,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    private func setupView() {
+        view.addSubview(testView)
+        view.setFittingConstraints(childView: testView, insets: .zero)
+    }
 }
 
