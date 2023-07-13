@@ -17,7 +17,7 @@ public protocol RenderableText {
 
 public extension Dictionary where Self.Key == NSAttributedString.Key, Self.Value == Any {
 	
-	static func attributed(font: UIFont,
+    static func attributed(font: UIFont,
 					color: UIColor = .black,
 					lineSpacing: CGFloat? = nil,
 					alignment: NSTextAlignment? = nil) -> Self {
@@ -40,7 +40,7 @@ public extension Dictionary where Self.Key == NSAttributedString.Key, Self.Value
 	
 }
 
-extension RenderableText {
+public extension RenderableText {
 	
 	func styled(
 		font: UIFont,
@@ -68,7 +68,7 @@ extension String: RenderableText {
 		NSAttributedString(string: self, attributes: attributes)
 	}
 	
-	func styled(font: CustomFonts, color: UIColor, size: CGFloat) -> NSAttributedString {
+	public func styled(font: CustomFonts, color: UIColor, size: CGFloat) -> NSAttributedString {
 		let attributes: [NSAttributedString.Key:Any] = [
 			.font: font.fontBuilder(size: size) ?? .systemFont(ofSize: size),
 			.foregroundColor: color,
@@ -103,7 +103,7 @@ extension NSAttributedString: RenderableText {
 		return .init(attributedString: copy)
 	}
 	
-	func styled(font: CustomFonts, color: UIColor, size: CGFloat) -> NSAttributedString {
+	public func styled(font: CustomFonts, color: UIColor, size: CGFloat) -> NSAttributedString {
 		let attributes: [NSAttributedString.Key:Any] = [
 			.font: font.fontBuilder(size: size) ?? .systemFont(ofSize: size),
 			.foregroundColor: color,
@@ -136,13 +136,13 @@ public extension String {
         let actualSize = self.boundingRect(with: maxSize, options: [.usesLineFragmentOrigin], attributes: [.font : font], context: nil)
         return actualSize.height
     }
-
+    
     func width(withHeight height: CGFloat, font: UIFont) -> CGFloat {
-            let constraintRect = CGSize(width: .greatestFiniteMagnitude, height: height)
-            let boundingBox = self.boundingRect(with: constraintRect, options: .usesLineFragmentOrigin, attributes: [.font : font], context: nil)
-
-            return ceil(boundingBox.width)
-        }
+        let constraintRect = CGSize(width: .greatestFiniteMagnitude, height: height)
+        let boundingBox = self.boundingRect(with: constraintRect, options: .usesLineFragmentOrigin, attributes: [.font : font], context: nil)
+        
+        return ceil(boundingBox.width)
+    }
 }
 
 public extension NSAttributedString {
@@ -153,9 +153,9 @@ public extension NSAttributedString {
     }
     
     func width(withHeight height: CGFloat) -> CGFloat {
-            let constraintRect = CGSize(width: .greatestFiniteMagnitude, height: height)
-            let boundingBox = self.boundingRect(with: constraintRect, options: .usesLineFragmentOrigin, context: nil)
-
-            return ceil(boundingBox.width)
-        }
+        let constraintRect = CGSize(width: .greatestFiniteMagnitude, height: height)
+        let boundingBox = self.boundingRect(with: constraintRect, options: .usesLineFragmentOrigin, context: nil)
+        
+        return ceil(boundingBox.width)
+    }
 }
