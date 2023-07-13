@@ -29,8 +29,8 @@ Pod::Spec.new do |s|
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '13.0'
-
-  s.source_files = 'UIKLayout/Source/**/*.swift'
+  s.swift_versions = '5.0'
+  s.source_files = 'Source/**/*.swift'
   
   # s.resource_bundles = {
   #   'UIKLayout' => ['UIKLayout/Assets/*.png']
