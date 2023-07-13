@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '13.0'
 
-  s.source_files = 'UIKLayout/Classes/**/*'
+  s.source_files = 'UIKLayout/Source/**/*.swift'
   
   # s.resource_bundles = {
   #   'UIKLayout' => ['UIKLayout/Assets/*.png']
