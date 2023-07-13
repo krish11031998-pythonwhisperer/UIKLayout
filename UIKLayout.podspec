@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/krish11031998-pythonwhisperer/UIKLayout'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '56647167' => 'krish_venkat@hotmail.com' }
+  s.author           = { 'Krish' => 'krish_venkat@hotmail.com' }
   s.source           = { :git => 'https://github.com/krish11031998-pythonwhisperer/UIKLayout.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
