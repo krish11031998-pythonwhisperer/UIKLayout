@@ -17,14 +17,13 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-'UIKLayout is a easy to use simple UIKit layout helper that will help you add and set constraints to views with ease.'
+  s.description = 'UIKLayout is a easy to use simple UIKit layout helper that will help you add and set constraints to views with ease.'
                        DESC
 
   s.homepage         = 'https://github.com/krish11031998-pythonwhisperer/UIKLayout'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Krish' => 'krish_venkat@hotmail.com' }
+  s.author           = { 'krish11031998-pythonwhisperer' => 'krish_venkat@hotmail.com' }
   s.source           = { :git => 'https://github.com/krish11031998-pythonwhisperer/UIKLayout.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
